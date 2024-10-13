@@ -93,8 +93,7 @@ export default function Home() {
 
   return (
     <div className="p-5">
-      <h1 className="text-3xl font-bold mb-6">Welcome to HanHackFest</h1>
-      <p>HanHackFest API is running...</p>
+      <h1 className="text-3xl font-bold mb-6">Welcome to Open Source MarketPlace!</h1>
 
       {/* Form to create a new MongoDB project */}
       <h2 className="text-2xl font-bold mt-8">Create a New Project</h2>
@@ -136,7 +135,7 @@ export default function Home() {
       </form>
 
       {/* Section for MongoDB Projects */}
-      <h2 className="text-2xl font-bold mt-8">Open Source Projects (MongoDB)</h2>
+      <h2 className="text-2xl font-bold mt-8">Open Source Market!</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
         {mongoProjects.length > 0 ? (
           mongoProjects.map((project) => (
@@ -159,7 +158,7 @@ export default function Home() {
       </div>
 
       {/* Section for GitHub Repositories */}
-      <h2 className="text-2xl font-bold mt-8">Open Source Repositories (GitHub)</h2>
+      <h2 className="text-2xl font-bold mt-8">My Github Repositories</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
         {githubRepos.length > 0 ? (
           githubRepos.map((repo) => (
