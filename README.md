@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Open Source MarketPlace
 
-## Getting Started
+Open Source MarketPlace is a platform where users can explore and contribute to various open-source projects. Users can view MongoDB-stored projects, explore popular GitHub repositories, filter projects by programming language, and submit their own open-source projects.
 
-First, run the development server:
+## Features
+- **Submit Projects:** Users can submit their own open-source projects which are stored in MongoDB.
+- **View MongoDB Projects:** Explore open-source projects that are stored in MongoDB.
+- **View GitHub Repositories:** Explore GitHub repositories from the project creator’s account.
+- **Filter Popular Repos by Language:** Discover trending GitHub repositories based on the selected programming language.
 
-```bash
+## Installation
+
+### Prerequisites
+- Node.js (v16 or higher)
+- MongoDB Atlas or local MongoDB setup
+- GitHub account
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hlee18lee46/hanhackfest
+
+2. Navigate to the project directory:
+cd hanhackfest
+
+3. Install dependencies:
+npm install
+
+4. Set up environment variables:
+Create a .env file in the root directory with the following content:
+MONGO_URI=<Your_MongoDB_Connection_String>
+PORT=5000
+
+5. Run the application:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit the application at http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Navigate to the project directory:
+cd hanhackfest/server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+7. Run backend npm run dev:
+   Visit the application at http://localhost:5000.
