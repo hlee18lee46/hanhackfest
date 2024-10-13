@@ -8,7 +8,7 @@ const CreateProjectForm = () => {
   const [level, setLevel] = useState('');
   const [tags, setTags] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const project = { name, description, url, level, tags: tags.split(',') };
 
